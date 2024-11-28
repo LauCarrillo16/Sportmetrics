@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --color-primario: #0a2a32;
+    --color-secundario: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.navbar-brand {
+    font-family: "Bungee Shade", cursive;
+}
+
+.navbar {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.presentacion {
+    position: relative;
+}
+
+.presentacion h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-family: "Bungee Shade", sans-serif;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 10%;
+    padding: 10px;
+}
+
+#intro p {
+    margin-top: 10%;
+    text-align: justify;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.91rem;
+}
+
+#intro img {
+    margin-top: 5%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    top {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+#intro img, p {
+    border-radius: 3%;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.segundrow {
+    margin-top: 10%;
+}
+
