@@ -25,25 +25,21 @@ body {
     position: relative;
 }
 
-.presentacion h1 {
+.logoSport {
     position: absolute;
-    top: 30%;
+    top: 1%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: var(--color-secundario);
-    font-family: "Bungee Shade", sans-serif;
+    transform: translateX(-50%);
     z-index: 1;
-    text-align: center;
-    padding: 10px;
 }
 
 #intro {
+    max-width: 900px;
+    margin: 20px auto; 
     display: flex;
     justify-content: center;
-    position: absolute;
-    margin-top: 10%;
+    position: relative;
+    margin-top: 5% 0;
     padding: 10px;
 }
 
@@ -68,13 +64,15 @@ body {
         opacity: 0;
         scale: 25%;
     }
+
     top {
         opacity: 1;
         scale: 100%;
     }
 }
 
-#intro img, p {
+#intro img,
+p {
     border-radius: 3%;
 
     view-timeline-name: --image;
@@ -91,3 +89,89 @@ body {
     margin-top: 10%;
 }
 
+#conoce h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Bungee Shade", cursive;
+    text-align: center;
+}
+
+.container {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.mod {
+    margin: 20px auto; /* Centrado horizontal y margen superior/inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Más espacio interno para que se vea más aireado */
+    justify-content: center;
+    background: linear-gradient(145deg, #0e3f4b, #145a66); /* Gradiente para un fondo más atractivo */
+    border-radius: 15px; /* Esquinas más redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de tarjeta */
+    max-width: 800px; /* Limitar el ancho para un diseño más limpio */
+    text-align: center; /* Centrar contenido dentro del mod */
+}
+
+.mod img {
+    margin: 10px 0;
+    width: 100px; /* Tamaño ajustado de los íconos */
+    height: auto;
+}
+
+.mod h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffffff; /* Texto blanco para resaltar */
+}
+
+.mod ul {
+    text-align: left; /* Listas alineadas a la izquierda */
+    width: 90%;
+    max-width: 600px;
+    list-style-type: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* Texto blanco */
+    padding: 0;
+}
+
+.mod li::before {
+    content: "✔️ ";
+    color: #32cd32; /* Verde más brillante */
+    margin-right: 8px;
+}
+
+.precios {
+    margin-top: 20px;
+    padding: 5%;
+    background-color: #145a66; /* Fondo a juego con el gradiente */
+    border-radius: 15px;
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centrar el contenido */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra similar */
+}
+
+
+.formularioConte {
+    margin: 20px auto; /* Centrado horizontal y margen superior/inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Más espacio interno para que se vea más aireado */
+    justify-content: center;
+    background: linear-gradient(145deg, #0a2a32, #145a66); /* Gradiente para un fondo más atractivo */
+    border-radius: 15px; /* Esquinas más redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 800px; /* Limitar el ancho para un diseño más limpio */
+    text-align: center;
+}
+
+.formularioConte label{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+}
