@@ -43,13 +43,31 @@ body {
     padding: 10px;
 }
 
+.mvv{
+    margin-top: 10%;
+}
+
+.m h3{
+    font-family: "Bungee Shade", cursive;
+    text-align:center;
+    font-size: 2.2rem !important;
+}
+
+.m p{
+    text-align:center !important; 
+    margin: 0 auto;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    font-size: 1.4rem !important;
+}
+
 #intro p {
     margin-top: 10%;
     text-align: justify;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 0.91rem;
+    font-size: 1.1rem;
 }
 
 #intro img {
@@ -94,6 +112,7 @@ p {
     margin-bottom: 5%;
     font-family: "Bungee Shade", cursive;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .container {
