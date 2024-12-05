@@ -175,3 +175,94 @@ p {
     font-style: normal;
     font-size: 1.2rem;
 }
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+}
+
+.icon:hover{
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(2){
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3){
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+
+.icon:hover:nth-child(4){
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+}
+
+.icon:hover:nth-child(5){
+    background-color: #000000;
+    box-shadow: 0 0 20px #000000;
+}
+
+.icon:hover:nth-child(6){
+    background-color: #25F4EE;
+    box-shadow: 0 0 20px #25F4EE;
+}
+
+.icon i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .5s ease-in-out;
+}
+
+.icon:hover circle{
+    stroke-dasharray: 220;
+}
+
+/* Ocultar carruseles por defecto */
+#carouselVertical,
+#carouselHorizontal {
+    display: none;
+}
+
+#carouselHorizontal img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original */
+    object-fit: cover; /* Ajusta la imagen dentro de su contenedor sin deformarse */
+}
+
+/* Mostrar carrusel vertical en móviles */
+@media (max-width: 768px) {
+    #carouselVertical {
+        display: block;
+    }
+}
+
+/* Mostrar carrusel horizontal en dispositivos más grandes */
+@media (min-width: 769px) {
+    #carouselHorizontal {
+        display: block;
+    }
+}
